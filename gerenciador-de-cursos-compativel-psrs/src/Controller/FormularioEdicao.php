@@ -39,6 +39,5 @@ class FormularioEdicao implements RequestHandlerInterface
             'curso' => $curso,
         ]);
         return new Response(302, [], $html);
-
     }
 }

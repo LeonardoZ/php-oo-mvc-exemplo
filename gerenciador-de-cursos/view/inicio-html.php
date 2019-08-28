@@ -30,7 +30,7 @@
         <div class="alert alert-<?=$_SESSION["tipoMensagem"];?>">
             <?=$_SESSION["mensagem"];?>
         </div>
-        <?php 
+        <?php
             unset($_SESSION["tipoMensagem"]);
             unset($_SESSION["mensagem"]);
         endif?>

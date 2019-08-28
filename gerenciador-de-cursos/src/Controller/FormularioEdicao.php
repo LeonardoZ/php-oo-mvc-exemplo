@@ -6,7 +6,7 @@ use Alura\Cursos\Entity\Curso;
 use Alura\Cursos\Helper\RenderizadorHtmlTrait;
 use Alura\Cursos\Infra\EntityManagerCreator;
 
-class FormularioEdicao  implements InterfaceControllerRequisicao
+class FormularioEdicao implements InterfaceControllerRequisicao
 {
     use RenderizadorHtmlTrait;
     

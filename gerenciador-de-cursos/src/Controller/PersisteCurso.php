@@ -6,7 +6,6 @@ use Alura\Cursos\Entity\Curso;
 use Alura\Cursos\Infra\EntityManagerCreator;
 use Alura\Cursos\Helper\FlashMessageTrait;
 
-
 class PersisteCurso implements InterfaceControllerRequisicao
 {
     use FlashMessageTrait;
@@ -28,7 +27,8 @@ class PersisteCurso implements InterfaceControllerRequisicao
         $id = filter_input(
             INPUT_GET,
             'id',
-            FILTER_VALIDATE_INT);
+            FILTER_VALIDATE_INT
+        );
 
         if (!is_null($id) && $id !== false) {
             $curso->setId($id);

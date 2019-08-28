@@ -6,12 +6,6 @@ use Alura\Cursos\Entity\Usuario;
 use Alura\Cursos\Infra\EntityManagerCreator;
 use Alura\Cursos\Helper\FlashMessageTrait;
 
-
-/**
- * Description of RealizarLogin
- *
- * @author leonardoz
- */
 class RealizarLogin implements InterfaceControllerRequisicao
 {
     use FlashMessageTrait;
@@ -36,9 +30,11 @@ class RealizarLogin implements InterfaceControllerRequisicao
             return;
         }
 
-        $senha = filter_input(INPUT_POST,
+        $senha = filter_input(
+            INPUT_POST,
             'senha',
-            FILTER_SANITIZE_STRING);
+            FILTER_SANITIZE_STRING
+        );
 
         $usuario = $this->repositorioDeUsuarios->findOneBy(['email' => $email]);
 

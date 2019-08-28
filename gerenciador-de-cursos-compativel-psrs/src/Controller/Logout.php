@@ -9,7 +9,6 @@ use Psr\Http\Server\RequestHandlerInterface;
 
 class Logout implements RequestHandlerInterface
 {
-
     public function handle(ServerRequestInterface $request): ResponseInterface
     {
         session_destroy();

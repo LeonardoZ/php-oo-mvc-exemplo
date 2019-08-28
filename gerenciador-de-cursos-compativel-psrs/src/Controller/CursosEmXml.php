@@ -11,7 +11,6 @@ use Psr\Http\Server\RequestHandlerInterface;
 
 class CursosEmXml implements RequestHandlerInterface
 {
-
     private $repositorioDeCursos;
 
     public function __construct(EntityManagerInterface $entityManager)

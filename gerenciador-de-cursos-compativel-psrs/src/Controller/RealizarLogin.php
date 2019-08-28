@@ -16,7 +16,7 @@ class RealizarLogin implements RequestHandlerInterface
 
     private $repositorioDeUsuarios;
 
-      public function __construct(EntityManagerInterface $entityManager)
+    public function __construct(EntityManagerInterface $entityManager)
     {
         $this->repositorioDeUsuarios = $entityManager->getRepository(Usuario::class);
     }
@@ -42,6 +42,5 @@ class RealizarLogin implements RequestHandlerInterface
 
 
         return new Response(302, ["Location" => "/listar-cursos"]);
-
     }
 }

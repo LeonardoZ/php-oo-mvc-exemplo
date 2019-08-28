@@ -23,6 +23,5 @@ class FormularioInsercao implements InterfaceControllerRequisicao
         $this->renderizaHtml("/cursos/formulario.php", [
             'titulo' => "Novo Curso"
         ]);
-
     }
 }

@@ -32,6 +32,5 @@ class ExcluirCurso implements InterfaceControllerRequisicao
         $this->entityManager->flush();
         $this->defineMensagem("success", "Curso excluído com sucesso");
         header("Location: /listar-cursos", false, 302);
-
     }
 }

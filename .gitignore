@@ -13,6 +13,9 @@ Desktop.ini
 # ignore Composer downloads
 */vendor/*
 
+# Ignore php_cs
+/.php_cs.cache
+
 # keep some hiddens
 !.htaccess
 !/.gitignore
